@@ -8,8 +8,13 @@ We pledge to make participation respectful and inclusive.
 - Avoid harassment
 - Accept feedback
 
-## Enforcement
+## Enforcement Responsibilities
 Violations will be reviewed and handled appropriately.
+
+
+##Scope
+
+##Enforcement Guidelines
 
 ## Attribution
 Inspired by open-source community standards.
