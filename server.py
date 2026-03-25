@@ -8,12 +8,12 @@ def home():
     return render_template("index.html")
 
 @app.route("/emotionDetector", methods=["POST"])
-def detect_emotion():
+def emotion():
     text = request.form["text"]
-
+    
     if text == "":
         return "Invalid input"
-
+    
     result = emotion_detector(text)
     return str(result)
 

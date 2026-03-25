@@ -1,8 +1,8 @@
 # Emotion Detection Application
 
-This project is a web-based application that detects emotions in text using IBM Watson NLP.
+This project is an AI-based Emotion Detection Web Application using IBM Watson NLP.
 
-## Features
-- Detects emotions (joy, anger, fear, sadness, disgust)
+Features:
+- Detects emotions from text
 - Displays dominant emotion
-- Web interface using Flask
+- Flask-based web app
