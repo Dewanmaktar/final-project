@@ -1,21 +1,22 @@
 from flask import Flask, request, render_template
-from EmotionDetection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-    return render_template("index.html")
+def render_index_page():
+    return render_template('index.html')
 
-@app.route("/emotionDetector", methods=["POST"])
-def emotion():
-    text = request.form["text"]
-    
-    if text == "":
-        return "Invalid input"
-    
-    result = emotion_detector(text)
-    return str(result)
+@app.route("/emotionDetector")
+def emotion_detector_route():
+    text_to_analyze = request.args.get('textToAnalyze')
+
+    if text_to_analyze == "":
+        return "Invalid input! Try again."
+
+    response = emotion_detector(text_to_analyze)
+
+    return str(response)
 
 if __name__ == "__main__":
     app.run(debug=True)
