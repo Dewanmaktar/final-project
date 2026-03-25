@@ -1,14 +1,8 @@
-# Simple Interest Calculator
+# Emotion Detection Application
 
-This project contains a bash script to calculate simple interest.
+This project is a web-based application that detects emotions in text using IBM Watson NLP.
 
-## Formula
-Simple Interest = (Principal × Rate × Time) / 100
-
-## Inputs
-- Principal
-- Rate of Interest
-- Time
-
-## Author
-Dewan Mohsin Aktar
+## Features
+- Detects emotions (joy, anger, fear, sadness, disgust)
+- Displays dominant emotion
+- Web interface using Flask
